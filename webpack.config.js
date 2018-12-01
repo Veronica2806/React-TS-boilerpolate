@@ -11,22 +11,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
-        loader: 'awesome-typescript-loader'
+        test: /\.css$/,
+        loader:'style-loader!css-loader',
+        exclude: /node_modules/
       },
       {
-        test: /\.css$/,
-        include: path.join(__dirname, 'src'),
-        use: [
-          'style-loader',
-          {
-            loader: 'typings-for-css-modules-loader',
-            options: {
-              modules: true,
-              namedExport: true
-            }
-          }
-        ]
+        test: /\.tsx?$/,
+        loader: 'awesome-typescript-loader'
       }
     ]
   },
