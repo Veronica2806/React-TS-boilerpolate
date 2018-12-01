@@ -16,8 +16,16 @@ module.exports = {
       },
       {
         test: /\.css$/,
+        include: path.join(__dirname, 'src'),
         use: [
-          { loader: "style-loader" }
+          'style-loader',
+          {
+            loader: 'typings-for-css-modules-loader',
+            options: {
+              modules: true,
+              namedExport: true
+            }
+          }
         ]
       }
     ]

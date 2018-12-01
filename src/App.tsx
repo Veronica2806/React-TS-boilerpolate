@@ -1,10 +1,10 @@
 import * as React from "react";
-import * as style from "style";
+import * as css from "./style.css";
 
 declare var module: any;
 interface HelloProps { compiler: string; framework: string; }
 
-const Hello = (props: HelloProps) => <h1 className={style.myClass}>Hello from {props.compiler} and {props.framework}!</h1>;
+const Hello = (props: HelloProps) => <h1 className={css.myclass}>Hello from {props.compiler} and {props.framework}!</h1>;
 
 (module).exports = Hello;
 
