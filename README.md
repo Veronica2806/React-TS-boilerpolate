@@ -9,5 +9,3 @@ How to install
 7. in your APP.JS file type "import JOPA from 'masa-module'"
 8. ????
 9. PROFIT
-
-If you have questions, please contact @Michael Konchakovskyy.
